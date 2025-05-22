@@ -1,0 +1,39 @@
+# Archivos temporales de Python
+pycache/
+*.pyc
+*.pyo
+*.pyd
+# Entornos virtuales
+.venv/
+venv/
+env/
+ENV/
+# Archivos de caché
+.cache/
+*.log
+*.tmp
+# Configuración local de Hugging Face
+huggingface/
+# Archivos grandes o pesados que no deben ir en el contenedor
+models/
+*.safetensors
+*.bin
+*.pt
+*.zip
+*.tar.gz
+# Archivos privados
+.env
+# Datos locales
+data/*.pdf
+# Carpetas de IDE
+.vscode/
+.idea/
+# Sistema
+.DS_Store
+Thumbs.db
+# Repositorio git
+.git/
+.gitignore
+# Otros
+DockerDesktopWSL/
+docker_data/
