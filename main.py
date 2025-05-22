@@ -51,7 +51,7 @@ def query_rag(req: QueryRequest):
     # Ejecutar RAG
     result = rag_chain.invoke({"question": question})
 
-    # === Fallback: usar primer fragmento si el modelo no responde ===
+    # Fallback: usar primer fragmento si el modelo no responde
     if result.strip().lower().startswith("no lo sé") or not result.strip():
         print("Aplicando fallback: mostrando fragmento en lugar del LLM")
         result = docs[0].page_content if docs else "No se encontró contenido relevante."

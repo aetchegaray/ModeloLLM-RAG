@@ -2,7 +2,7 @@ import sys
 import os
 from app.parser import parsear_politicas, convertir_a_documentos
 from app.embedding_store import build_vectorstore
-pdf_path = "data\politicas_internas.pdf"
+pdf_path = "data/politicas_internas.pdf"
 print("Parseando el documento...")
 politicas = parsear_politicas(pdf_path)
 print("Convirtiendo a documentos...")
